@@ -1,9 +1,14 @@
 using System;
+using System.Net.Mail;
 
-class Program
+namespace EternalQuest
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello World! This is the EternalQuest Project.");
+        static void Main(string[] args)
+        {
+            GoalManager manager = new GoalManager();
+            manager.Start();
+        }
     }
 }
